@@ -3,9 +3,11 @@ const hoursEl = document.getElementById("hours")
 const minsEl = document.getElementById("mins")
 const secondsEl = document.getElementById("seconds")
 
+// Until New Years . change this
 const NewYears = '1 Jan 2021'
 
 function countdown(){
+    
     const newYearsDate = new Date(NewYears);
     const currentDate = new Date();
     const totalSeconds = (newYearsDate - currentDate) / 1000;
@@ -21,7 +23,6 @@ function countdown(){
 }
 
 function formatTime (time) {
-    // return time < 10 ? "0"+time : time;
     return time < 10 ? `0${time}` : time;
 }
 
